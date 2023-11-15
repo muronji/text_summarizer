@@ -8,7 +8,7 @@ function App() {
   const [submitting, setSubmitting] = useState(false);
   const [isCopy, setIsCopy] = useState(false);
 
-  const apiKey = "sk-qQ2gF3X9BVj4wY97HdiGT3BlbkFJXzNPAMEcxwOLaBnbaSBEY";
+  const apiKey = "API_KEY";
 
   const handlesubmit = async (e) => {
     e.preventDefault();
@@ -19,7 +19,7 @@ function App() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer sk-qQ2gF3X9BVj4wY97HdiGT3BlbkFJXzNPAMEcxwOLaBnbaSBEY"`,
+          Authorization: `Bearer API_KEY"`,
         },
         body: JSON.stringify({
           prompt: value + `\n\nTl;dr`,
